@@ -10,7 +10,7 @@ Here are some visualization of the labelling of selected samples from field data
 
 **Video 1:**
 
-[![Watch the video](https://img.youtube.com/vi/_5tFXJQIzi4/0.jpg)](https://www.youtube.com/watch?v=_5tFXJQIzi4)
+[![Watch the video](https://youtu.be/WGsAN4cz99E)
 
 **Video 2:**
 <video width="346" height="260" controls>
