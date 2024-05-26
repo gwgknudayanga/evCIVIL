@@ -9,10 +9,8 @@ Here are some visualization of the labelling of selected samples from field data
 ## Video Pair 1
 
 **Video 1:**
-<video width="346" height="260" controls>
-  <source src="https://github.com/gwgknudayanga/evCIVIL/blob/main/visualization_videos/day_spalling.mp4" type="video/mp4">
-  [![Watch the video]("https://github.com/gwgknudayanga/evCIVIL/blob/main/visualization_videos/day_spalling.mp4")](https://www.youtube.com/watch?v=_5tFXJQIzi4)
-  Your browser does not support the video tag.
+<video src="https://github.com/gwgknudayanga/evCIVIL/blob/main/visualization_videos/day_spalling.mp4" controls>
+Your browser does not support the video tag
 </video>
 
 **Video 2:**
