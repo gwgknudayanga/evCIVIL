@@ -10,12 +10,12 @@ Here are some visualization of the labelling of selected samples from field data
 
 **Video 1:**
 <video width="346" height="260" controls>
-  <source src="https://github.com/gwgknudayanga/evCIVIL/blob/main/visualization_videos/day_spalling.avi" type="video/avi">
+  <source src="https://github.com/gwgknudayanga/evCIVIL/blob/main/visualization_videos/day_spalling.mp4" type="video/avi">
   Your browser does not support the video tag.
 </video>
 
 **Video 2:**
 <video width="346" height="260" controls>
-  <source src="[video1_comparison.mp4](https://github.com/gwgknudayanga/evCIVIL/blob/main/visualization_videos/frame_day_spall.avi)" type="video/avi">
+  <source src="[video1_comparison.mp4](https://github.com/gwgknudayanga/evCIVIL/blob/main/visualization_videos/frame_day_spall.mp4)" type="video/avi">
   Your browser does not support the video tag.
 </video>
