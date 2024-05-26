@@ -1,0 +1,23 @@
+day_time = 145
+
+/ev-CIVIL_dataset/Laboratory_dataset/AT_DTU_4/*_spalling_* = 7
+ev-CIVIL_dataset/Laboratory_dataset/at_ETH = 124
+ev-CIVIL_dataset/Laboratory_dataset/At_DTU_part_2/*_crack_* = 14
+
+Flurosent light : 146
+
+ev-CIVIL_dataset/Laboratory_dataset/AT_DTU_3/ = 18
+ev-CIVIL_dataset/Laboratory_dataset/AT_DTU_4/*_crack_* = 31
+ev-CIVIL_dataset/Laboratory_dataset/at_DTU = 68
+ev-CIVIL_dataset/Laboratory_dataset/At_DTU_part_2/*_spalling_* = 29
+
+Laser Light: 70
+
+ev-CIVIL_dataset/Laboratory_dataset/Night_indoor
+
+
+
+all samples = 70 + 146 + 145 
+
+
+

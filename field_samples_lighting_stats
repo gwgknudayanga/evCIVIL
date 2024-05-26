@@ -1,0 +1,29 @@
+Laser lighting = 65
+
+ev-CIVIL_dataset/Field_dataset/Night_outdoor/night_outdoor_jan_2/  = 3
+ev-CIVIL_dataset/Field_dataset/Night_outdoor/night_outdoor_31st_dec = 28
+ev-CIVIL_dataset/Field_dataset/Night_outdoor/night_outdoor_27th_dec = 21
+ev-CIVIL_dataset/Field_dataset/Night_outdoor/night_spalling = 13
+
+Street Lighting = 19
+
+ev-CIVIL_dataset/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ = 17
+ev-CIVIL_dataset/Field_dataset/day_time_challenge/crack_88
+ev-CIVIL_dataset/Field_dataset/day_time_challenge/crack_89
+
+Tunnel selected = 8
+
+ev-CIVIL_dataset/Field_dataset/tunnel_selected = 8
+
+Day light = 226
+
+ev-CIVIL_dataset/Field_dataset/field_data_day = 216
+ev-CIVIL_dataset/Field_dataset/other_data = 6
+ev-CIVIL_dataset/Field_dataset/day_time_challenge/crack_115
+ev-CIVIL_dataset/Field_dataset/day_time_challenge/crack_113
+ev-CIVIL_dataset/Field_dataset/day_time_challenge/spalling_31
+ev-CIVIL_dataset/Field_dataset/day_time_challenge/spalling_57
+
+
+
+All = 65 + 19 + 8 + 226 = 318
