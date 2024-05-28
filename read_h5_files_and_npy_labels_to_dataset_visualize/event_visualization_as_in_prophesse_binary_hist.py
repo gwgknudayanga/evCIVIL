@@ -1,3 +1,5 @@
+# Main Reference : https://github.com/prophesee-ai/prophesee-automotive-dataset-toolbox/blob/master/dataset_visualization.py
+#Modified the above main reference to visualize the evCIVL dataset
 import os
 import numpy as np
 import cv2
@@ -303,7 +305,7 @@ if __name__ == "__main__":
     
     #/media/udayanga/OS/Users/gwgkn/Research_work/Synthetic_Event_Data/crack_aedata_synthesized_h5_files/
     # h5_files/crack/synth_crack_1/synth_crack_1_events.h5
-    base_path = "/media/udayanga/data_2/shon_data/DATA_TO_HOST/ev-CIVIL_dataset/Field_dataset/"
+    base_path = "/media/udayanga/data_2/shon_data/DATA/Laboratory_data/"
     #ARGS = parse_args()
     
     #spalling 36
@@ -311,8 +313,8 @@ if __name__ == "__main__":
     #records_sub = ["field_data_day/dset_2/crack_76/crack_76_events.h5"]
     #labels_sub = ["field_data_day/dset_2/crack_76/crack_76_label.npy"]
     
-    records_sub = ["field_data_day/dset_2/spalling_36/spalling_36_events.h5"]
-    labels_sub = ["field_data_day/dset_2/spalling_36/spalling_36_label.npy"]
+    records_sub = ["/At_DTU_4/crack/h5_files/dtu_4_crack_20/dtu_4_crack_20_events.h5"]
+    labels_sub = ["/At_DTU_4/crack/h5_files/dtu_4_crack_20/dtu_4_crack_20_label.npy"]
 
     #records_sub = ["Night_outdoor/night_outdoor_31st_dec/31_crack_46/31_crack_46_events.h5"]
     #labels_sub = ["Night_outdoor/night_outdoor_31st_dec/31_crack_46/31_crack_46_label.npy"]
