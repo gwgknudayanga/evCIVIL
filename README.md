@@ -4,6 +4,8 @@ ev-CIVIL: Event-Based Dataset for Visual Detection of Civil Infrastructure Defec
 
 Here are some visualization of the labelling of selected samples from field data.
 
+The dataset can be downloaded at 
+
 ## 1. Day time data samples
 
 **spalling - event-based**
