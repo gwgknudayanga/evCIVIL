@@ -8,7 +8,7 @@ Here are some visualization of the labelling of selected samples from field data
 
 
 
-## 1. Day time data samples
+ 1. Day time data samples
 
 **spalling - event-based**
 [![Watch the video](https://img.youtube.com/vi/_5tFXJQIzi4/0.jpg)](https://www.youtube.com/watch?v=0qPVgUOcUQE)
