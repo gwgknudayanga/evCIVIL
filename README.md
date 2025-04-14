@@ -6,7 +6,9 @@ If you found our data/paper/code important or useful please cite our paper. Than
 
 http://arxiv.org/abs/2504.05679 (Event-based Civil Infrastructure Visual Defect Detection: ev-CIVIL Dataset and Benchmark)
 
-### The dataset can be downloaded at 
+* For detection benchmarking,
+    - YOLOv6 model was developed based on the initial code from https://github.com/meituan/YOLOv6
+    - SSD model was developed based on the initial code from https://github.com/vietnh1009/SSD-pytorch
 
 
 Here are some visualization of the labelling of selected samples from field data.
