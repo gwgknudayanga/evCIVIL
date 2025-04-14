@@ -1,0 +1,92 @@
+Traceback (most recent call last):
+  File "/zhome/c4/9/166836/.lsbatch/1710582150.20611531.shell", line 6, in <module>
+    import yaml
+ModuleNotFoundError: No module named 'yaml'
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 20611531: <NONAME> in cluster <dcc> Exited
+
+Job <NONAME> was submitted from host <n-62-20-1> by user <kniud> in cluster <dcc> at Sat Mar 16 10:42:30 2024
+Job was executed on host(s) <n-62-11-62>, in queue <hpc>, as user <kniud> in cluster <dcc> at Sat Mar 16 10:42:32 2024
+</zhome/c4/9/166836> was used as the home directory.
+</work3/kniud/object_detection/YOLOv6> was used as the working directory.
+Started at Sat Mar 16 10:42:32 2024
+Terminated at Sat Mar 16 10:42:34 2024
+Results reported at Sat Mar 16 10:42:34 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
+import argparse
+from logging import Logger
+import os
+import yaml
+import os.path as osp
+from pathlib import Path
+import torch
+import torch.distributed as dist
+import sys
+import datetime
+
+ROOT = os.getcwd()
+if str(ROOT) not in sys.path:
+    sys.path.append(str(ROOT))
+
+from yolov6.core.engine import Trainer
+from yolov6.utils.config import Config
+from yolov6.utils.events import LOGGER, save_yaml
+from yolov6.utils.envs import get_envs, select_device, set_random_seed
+from yolov6.utils.general import increment_name, find_latest_checkpoint, check_img_size
+
+#Reference github : https://github.com/meituan/YOLOv6
+
+def get_args_parser(add_help=True):
+    parser = argparse.ArgumentParser(description='YOLOv6 PyTorch Training', add_help=add_help)
+    parser.add_argument('--data-path', default='./data/defects.yaml', type=str, help='path of dataset')
+    parser.add_argument('--conf-file', default='./configs/yolov6m_finetune.py', type=str, help='experiments description file')
+    parser.add_argument('--img-size', default=640, type=int, help='train, val image size (pixels)')
+    parser.add_argument('--rect', action='store_true', help='whether to use rectangular training, default is False')
+    parser.add_argument('--batch-size', default=16, type=int, help='total batch size for all GPUs')
+    parser.add_argument('--epochs', default=650, type=int, help='number of total epochs to run')
+    parser.add_argument('--workers', default=4, type=int, help='number of data loading workers (default: 8)')
+    parser.add_argument('--device', default='0', type=str, help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
+    parser.add_argument('--eval-interval', default=20, type=int, help='evaluate at every interval epochs')
+    parser.add_argument('--eval-final-only', action='store_true', help='only evaluate at the final epoch')
+    parser.add_argument('--heavy-eval-range', default=50, type=int,
+                        help='evaluating every epoch for last such epochs (can be jointly used with --eval-interval)')
+    parser.add_argument('--check-images', action='store_true', help='check images when initializing datasets')
+    parser.add_argument('--check-labels', action='store_true', help='check label files when initializing datasets')
+    parser.add_argument('--output-dir', default='./runs/train', type=str, help='path to save outputs')
+    parser.add_argument('--name', default='exp', type=str, help='experiment name, saved to output_dir/name')
+    parser.add_argument('--dist_url', default='env://', type=str, help='url used to set up distributed training')
+    parser.add_argument('--gpu_count', type=int, default=0)
+    parser.add_argument('--local_rank', type=int, default=-1, help='DDP parameter')
+    parser.add_argument('--resume', nargs='?', const=True, default=False, help='resume the most recent training')
+    parser.add_argument('--write_trainbatch_tb', action='store_true', help='write train_batch image to tensorboard once an epoch, may slightly slower train speed if open')
+    parser.add_argument('--stop_aug_last_n_epoch', default=15, type=int, help='stop strong aug at last n epoch, neg value not stop, default 15')
+    parser.add_argument('--save_ckpt_on_last_n_epoch', default=10, type=int, help='save last n epoch even not best or last, neg value not save')
+
+(... more ...)
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.66 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     1024.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   2 sec.
+    Turnaround time :                            4 sec.
+
+The output (if any) is above this job summary.
+

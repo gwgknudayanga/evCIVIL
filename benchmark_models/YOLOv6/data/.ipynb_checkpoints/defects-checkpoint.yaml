@@ -1,0 +1,17 @@
+train_img: /dtu/eumcaerotrain/data/latest_dataset_encode_benchmark_25_25/night_outdoor_and_daytime_train_files_event_based_2.txt
+train_ann: 
+val_img: /dtu/eumcaerotrain/data/latest_dataset_encode_benchmark_25_25/night_outdoor_test_files_event_based.txt
+val_ann: 
+
+#train_img: /dtu/eumcaerotrain/data/Image_Data/yolo_nas_img_dataset/train_imgs.txt
+#train_ann: /dtu/eumcaerotrain/data/Image_Data/yolo_nas_img_dataset/train_anns.txt
+#val_img: /dtu/eumcaerotrain/data/Image_Data/yolo_nas_img_dataset/val_imgs.txt
+#val_ann: /dtu/eumcaerotrain/data/Image_Data/yolo_nas_img_dataset/val_anns.txt
+
+anno_path: /work3/kniud/object_detection/YOLOv6/val_defect_format.json
+
+nc: 2
+
+is_coco: False
+
+names: ["crack","spalling"]
