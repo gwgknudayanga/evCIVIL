@@ -1,0 +1,49 @@
+model: VGG16
+#ResNet34
+
+dataset: CustomDefectDataSet
+dataset_train_params: 
+  dataset_parent_folder: "/dtu/eumcaerotrain/data/latest_dataset"
+  data_csv_path: "/dtu/eumcaerotrain/data/latest_dataset/night_outdoor_and_daytime_train_files_event_based.txt"
+  event_encoding_method: 1
+  img_size: 128 # TODO: 64
+  transform: True
+  dataset_type: "npz_event_based"
+
+dataset_test_params: 
+  dataset_parent_folder: "/dtu/eumcaerotrain/data/latest_dataset"
+  data_csv_path: "/dtu/eumcaerotrain/data/latest_dataset/test_files_event_based.txt"
+  event_encoding_method: 1
+  img_size: 128 # TODO: 64
+  transform: False
+  dataset_type: "npz_event_based"
+
+
+batch_size: 16
+
+path_to_save: ./results
+
+img_channels: 2
+saving_checkpoint: 10
+device: cuda:0
+
+epochs: 120
+criterion: CrossEntropyLoss
+optimizer: Adam
+optimizer_params:
+  lr: 0.001
+  weight_decay: 0.0005
+
+grad_clip: 0.1
+
+#scheduler: StepLR
+#scheduler_params:
+#  step_size: 40
+#  gamma: 0.5
+
+scheduler: ReduceLROnPlateau
+scheduler_params:
+    mode: 'max'
+    factor: 0.5
+    patience: 5
+    threshold: 0.001
