@@ -1,0 +1,7 @@
+removed following files from ros_crack_18th_december
+in train
+ros_crack_1_1657891.npz
+
+in test
+/ros_crack_12/ros_crack_12_350880.npz
+31_crack_45_1378771.npz
